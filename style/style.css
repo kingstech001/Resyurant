@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    /* border: red solid; */
+}
+
+header p{
+    background-color: #35B8BE;
+    padding: 10px;
+    text-align: center;
+    color: #D9D9D9;
+}
+
+header span a{
+    color: #FFFFFF;
+}
+
+.cart{
+    background-color: #35B8BE;
+}
+
+.nav-section, nav, ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-section{
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+nav,ul{
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-item{
+    text-decoration: none   ;
+}
+
+li a{
+    color:#00000080;;
+}
+
+.vector-bg{
+    display: flex;
+    /* border: red solid; */
+    height: 76.7vh;
+    width: 100%;
+    position: absolute;
+    justify-content: flex-end;
+    padding: 0 4.5rem;
+}
+
+.section-1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    /* border: blue solid; */
+    height:100vh;
+}
+
+.article{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.big-image{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.hero-image-1{
+    width: 70%;
+}
+
+.section-1 h2 , .section-2 h2,.section-3 h2{
+    font-size: 4rem;
+}
+
+.section-1 article p , .section-2 article p{
+    margin: .8rem 0 2rem 0;
+    color: #00000080;
+}
+
+.section-1 button{
+    background-color: #35B8BE;
+    padding: 1rem 5rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.section-1 button a , .section-2 button a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.section-1 span{
+    color: #35B8BE;
+}
+
+.star{
+    margin-bottom: 1rem;
+}
+
+.star::before{
+    content: url(/images/Star\ 1.svg);
+    position: relative;
+    top: 5px;
+}
+
+.section-2{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #EFF9FA;
+    align-items: center;
+    padding: 5rem;
+}
+
+.section-2 h2, .section-3 h2{
+    color: #35B8BE;
+}
+
+.section-2 .article{
+    width: 50%;
+}
+
+.big-image-2{
+    width: 50%;
+}
+
+.hero-image-2{
+    max-width: 80%;
+}
+
+.section-2 button{
+    background-color: #35B8BE;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.section-3{
+    text-align: center;
+    padding: 5rem;
+    height: 100vh;
+}
+.about img{
+    /* width: 10rem; */
+}
+
+.about{
+    display: flex;
+    padding: 3rem 0;
+}
+
+.about article{
+    margin-top: 2rem;
+}
+.about article p{
+    margin-top: .5rem;
+    color: #00000080;
+    padding: 0 2rem;
+}
+.about h3{
+    font-size: 15px;
+}
+
+.menu,.online,.delivery{
+    padding: 0 1rem;
+}
+
+/* -----------------------------mobile view -------------------------------------*/
+
+
+@media only screen and (max-width:767px) {
+    header{
+        background-color: #35B8BE08;
+        
+    }
+    header .small{
+        background-color: #FFFFFF;
+        width: 100%;
+        height:30px;
+    }
+    header p{
+    display: NONE;
+    }
+    nav{
+        display: none;
+    }
+
+
+    .nav-section{
+        padding: 3rem;
+    }
+
+    .vector-bg{
+        padding:0;
+        height: 78vh;
+        width: 100%;
+    }
+
+    .section-1{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        text-align: center;
+        height: 180vh;
+    
+    }
+
+    .section-1 h2{
+        font-size: 3rem;
+        font-weight: 1000;
+    }
+    .section-1 button{
+        margin-bottom: 2rem;
+    }
+
+    .section-1 .article{
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 2rem;
+        height: 100vh;
+    }
+    .big-image{
+        width: 100%;
+        height: 70vh;
+    }
+    .hero-image-1{
+        width: 80%;
+    }
+
+    .section-2{
+        flex-direction: column;
+        text-align: center;
+        height: 170vh;
+    }
+    .section-2 .article{
+        width: 100%;
+        height: 85vh;
+    }
+    .section-2 h2{
+        font-size:3rem ;
+        font-weight: 1000;
+    }
+    .section-2 button{
+        margin: 3rem 0;
+    }
+    .big-image-2{
+        width: 100%;
+        height: 85vh;
+    }
+
+    .hero-image-2{
+        max-width: 80%;
+    }
+
+    .about{
+        flex-wrap: wrap;
+    }
+    .section-3{
+        height: 200vh;
+    }
+    .section-3 h2{
+        font-size: 3rem;
+    }
+}
